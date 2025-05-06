@@ -1,0 +1,227 @@
+[
+  {
+    "category": "Leves",
+    "name": "Mediterrán paradicsomkrémleves",
+    "description": "Lágy, selymes állagú paradicsomlevesünk sült fokhagymás krutonnal, friss bazsalikomlevélkékkel és egy csipet tejszínnel gazdagítva.",
+    "price": 7490,
+    "allergens": "Glutén, Tej",
+    "calories": 200,
+    "image": "tomato_soup.jpg"
+  },
+  {
+    "category": "Leves",
+    "name": "Csirkeleves",
+    "description": "Hagyományos magyar csirkeaprólékból készült leves.",
+    "price": 5990,
+    "allergens": "Glutén, Tojás",
+    "calories": 210,
+    "image": "chicken_soup.jpg"
+  },
+  {
+    "category": "Leves",
+    "name": "Gulyásleves",
+    "description": "Gazdag marhahússal, zöldségekkel tálalva.",
+    "price": 6990,
+    "allergens": "Glutén",
+    "calories": 250,
+    "image": "goulash.jpg"
+  },
+  {
+    "category": "Leves",
+    "name": "Paradicsomleves",
+    "description": "Friss paradicsomból, bazsalikommal.",
+    "price": 6490,
+    "allergens": "Glutén",
+    "calories": 180,
+    "image": "tomato_soup2.jpg"
+  },
+  {
+    "category": "Előétel",
+    "name": "Bruschetta",
+    "description": "Pirított kenyér paradicsommal és fokhagymával.",
+    "price": 4490,
+    "allergens": "Glutén",
+    "calories": 320,
+    "image": "bruschetta.jpg"
+  },
+  {
+    "category": "Előétel",
+    "name": "Töltött paprika",
+    "description": "Fűszeres darált hússal töltött paprika.",
+    "price": 5490,
+    "allergens": "Nincs",
+    "calories": 290,
+    "image": "peppers.jpg"
+  },
+  {
+    "category": "Saláta",
+    "name": "Cézár saláta",
+    "description": "Csirkehússal, parmezánnal, croutonnal.",
+    "price": 3990,
+    "allergens": "Tej, Glutén",
+    "calories": 450,
+    "image": "caesar.jpg"
+  },
+  {
+    "category": "Saláta",
+    "name": "Görög saláta",
+    "description": "Uborka, paradicsom, feta, olívabogyó.",
+    "price": 3190,
+    "allergens": "Tej",
+    "calories": 380,
+    "image": "greek.jpg"
+  },
+  {
+    "category": "Saláta",
+    "name": "Rukkola saláta",
+    "description": "Rukkola, parmezán, balzsamecet.",
+    "price": 3190,
+    "allergens": "Tej",
+    "calories": 300,
+    "image": "ruccola.jpg"
+  },
+  {
+    "category": "Főétel",
+    "name": "Bélszín steak sült krumplival",
+    "description": "Lédús, közepesen rózsaszínre sütött marhabélszín pirospaprikás vajas mártással, ropogós sült burgonyaszeletekkel.",
+    "price": 10900,
+    "allergens": "Tej",
+    "calories": 750,
+    "image": "steak.jpg"
+  },
+  {
+    "category": "Főétel",
+    "name": "Marhapörkölt",
+    "description": "Hagymás, paprikás marhahús.",
+    "price": 9990,
+    "allergens": "Nincs",
+    "calories": 680,
+    "image": "beef_stew.jpg"
+  },
+  {
+    "category": "Főétel",
+    "name": "Sült csirke",
+    "description": "Rozmaringos, sült csirkecomb.",
+    "price": 7490,
+    "allergens": "Nincs",
+    "calories": 620,
+    "image": "roast_chicken.jpg"
+  },
+  {
+    "category": "Főétel",
+    "name": "Halfilé",
+    "description": "Rántott pontyfilé tartármártással.",
+    "price": 12290,
+    "allergens": "Hal, Glutén",
+    "calories": 540,
+    "image": "fish.jpg"
+  },
+  {
+    "category": "Főétel",
+    "name": "Lasagne",
+    "description": "Rétegezett tészta darált hússal és sajttal.",
+    "price": 11900,
+    "allergens": "Tej, Glutén",
+    "calories": 750,
+    "image": "lasagne.jpg"
+  },
+  {
+    "category": "Főétel",
+    "name": "Spagetti Carbonara",
+    "description": "Krémes tojásszósszal és parmezánnal készült spagetti, baconnel és frissen őrölt fekete borssal.",
+    "price": 8490,
+    "allergens": "Glutén, Tojás, Tej",
+    "calories": 680,
+    "image": "carbonara.jpg"
+  },
+  {
+    "category": "Főétel",
+    "name": "Pad Thai tészta",
+    "description": "Sült rizstészta ropogós földimogyoróval, tofuval, tojással és zöldségekkel, lime‑mal tálalva.",
+    "price": 7990,
+    "allergens": "Tojás, Földimogyoró, Glutén",
+    "calories": 700,
+    "image": "pad_thai.jpg"
+  },
+  {
+    "category": "Főétel",
+    "name": "Rántott sajt",
+    "description": "Camembert bundában, áfonyalekvárral.",
+    "price": 8250,
+    "allergens": "Tej, Glutén",
+    "calories": 580,
+    "image": "cheese.jpg"
+  },
+  {
+    "category": "Főétel",
+    "name": "Wellington bélszín",
+    "description": "Leveles tésztába burkolt bélszín, gombamártással és prosciuttóval rétegezve.",
+    "price": 13990,
+    "allergens": "Glutén",
+    "calories": 920,
+    "image": "beef_wellington.jpg"
+  },
+  {
+    "category": "Desszert",
+    "name": "Áfonyás sajttorta",
+    "description": "Krémes, omlós alappal készült sajttorta édes-áfonyás szósszal és friss bogyós gyümölcsökkel.",
+    "price": 4590,
+    "allergens": "Tej, Glutén",
+    "calories": 450,
+    "image": "cake.jpg"
+  },
+  {
+    "category": "Desszert",
+    "name": "Tiramisu",
+    "description": "Kávé és mascarpone krémes desszert.",
+    "price": 4590,
+    "allergens": "Tej, Glutén",
+    "calories": 410,
+    "image": "tiramisu.jpg"
+  },
+  {
+    "category": "Desszert",
+    "name": "Almás pite",
+    "description": "Fahéjas almás töltelék omlós, vajas tésztában, vaníliafagylalttal tálalva.",
+    "price": 3000,
+    "allergens": "Tej, Glutén",
+    "calories": 430,
+    "image": "apple_pie.jpg"
+  },
+  {
+    "category": "Desszert",
+    "name": "Csokoládétorta",
+    "description": "Sűrű, étcsokoládé alapú tortaszelet.",
+    "price": 4590,
+    "allergens": "Tej, Glutén",
+    "calories": 480,
+    "image": "choco_cake.jpg"
+  },
+  {
+    "category": "Ital",
+    "name": "Espresso",
+    "description": "Erős olasz presszókávé.",
+    "price": 890,
+    "allergens": "Nincs",
+    "calories": 5,
+    "image": "espresso.jpg"
+  },
+  {
+    "category": "Ital",
+    "name": "Cappuccino",
+    "description": "Espresso tejhabbal.",
+    "price": 790,
+    "allergens": "Tej",
+    "calories": 120,
+    "image": "cappuccino.jpg"
+  },
+  {
+    "category": "Ital",
+    "name": "Narancslé",
+    "description": "Frissen facsart narancslé.",
+    "price": 690,
+    "allergens": "Nincs",
+    "calories": 110,
+    "image": "juice.jpg"
+  }
+]

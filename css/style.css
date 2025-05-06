@@ -43,6 +43,12 @@ body {
   background-color: #fff;
 }
 
+.features p {
+  color: #212529;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
 .features .features__item {
   text-align: center;
   display: flex;
@@ -95,10 +101,11 @@ body {
   border-bottom: 2px solid var(--gourmet-beige);
 }
 
-.daily-offers__title {
+.daily-offers__title,
+.menu__title {
   color: var(--gourmet-beige);
   font-size: 3rem;
-  margin: 3rem 0;
+  margin: 1.2rem 0 3rem 0;
 }
 
 .daily-offers__divider {
@@ -122,4 +129,29 @@ body {
   .offer__heading {
     margin-top: 7rem;
   }
+}
+
+.table {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #212529;
+}
+
+.table__img {
+  width: 125px;
+  height: 85px;
+  object-fit: cover;
+}
+
+.table__name,
+.table__price {
+  min-width: 120px;
+  text-align: right;
+  padding-right: 25px;
+  color: var(--gourmet-beige) !important;
+  font-weight: 500;
+}
+
+.table__name {
+  text-align: left;
 }

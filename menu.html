@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gourmet Étterem</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navMenu"
+        >
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="menu.html">Étlap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galéria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservation.html">Foglalás</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Rólunk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<section class="banner">
+</section>
+
+    <section class="menu container py-5">
+      <h2 class="text-center mb-4 menu__title">Étlapunk</h2>
+      <div class="table-responsive">
+        <table class="table table-striped" id="menuTable">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Kategória</th>
+              <th scope="col" style="min-width: 125px">Kép</th>
+              <th scope="col">Név</th>
+              <th scope="col">Leírás</th>
+              <th scope="col">Allergének</th>
+              <th scope="col">Kalória (kcal)</th>
+              <th
+                scope="col"
+                style="min-width: 120px; text-align: right; padding-right: 20px"
+              >
+                Ár (Ft)
+              </th>
+            </tr>
+          </thead>
+          <tbody id="menuBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <small>&copy; 2025 Szabó Gergely | Minden jog fenntartva.</small>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/scripts.js"></script>
+  </body>
+</html>
