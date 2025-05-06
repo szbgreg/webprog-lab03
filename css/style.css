@@ -102,7 +102,8 @@ body {
 }
 
 .daily-offers__title,
-.menu__title {
+.menu__title,
+.gallery__title {
   color: var(--gourmet-beige);
   font-size: 3rem;
   margin: 1.2rem 0 3rem 0;
@@ -112,7 +113,8 @@ body {
   margin: 5rem 0;
 }
 
-.offer__heading {
+.offer__heading,
+.restaurant__heading {
   color: var(--gourmet-beige);
   font-weight: 300;
   line-height: 1;
@@ -120,13 +122,15 @@ body {
 }
 
 @media (min-width: 40em) {
-  .offer__heading {
+  .offer__heading,
+  .restaurant__heading {
     font-size: 50px;
   }
 }
 
 @media (min-width: 62em) {
-  .offer__heading {
+  .offer__heading,
+  .restaurant__heading {
     margin-top: 7rem;
   }
 }
@@ -154,6 +158,10 @@ body {
 
 .table__name {
   text-align: left;
+}
+
+.gallery {
+  margin: 3rem 0;
 }
 
 .gallery__img {
