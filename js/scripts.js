@@ -42,3 +42,32 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((err) => console.error("Hiba a menü betöltésekor:", err));
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("./data/menu.json")
+    .then((res) => res.json())
+    .then((data) => {
+      const galleryBody = document.getElementById("galleryBody");
+
+      data.forEach((item) => {
+        const div = document.createElement("div");
+        div.classList.add("col-md-4", "col-sm-6");
+
+        const a = document.createElement("a");
+        a.href = `images/${item.image}`;
+        a.classList.add("glightbox");
+
+        const img = document.createElement("img");
+        img.src = `images/${item.image}`;
+        img.alt = item.name;
+        img.classList.add("img-fluid", "gallery__img");
+
+        a.appendChild(img);
+        div.appendChild(a);
+        galleryBody.appendChild(div);
+      });
+
+      const lightbox = GLightbox({ selector: ".glightbox" });
+    })
+    .catch((err) => console.error("Hiba a galéria betöltésekor:", err));
+});

@@ -155,3 +155,9 @@ body {
 .table__name {
   text-align: left;
 }
+
+.gallery__img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+}
