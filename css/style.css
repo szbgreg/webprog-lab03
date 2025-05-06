@@ -1,3 +1,8 @@
+:root {
+  --gourmet-beige: #bda96f;
+  --gourmet-btn-hover: #a58f4d;
+}
+
 body {
   min-height: 100vh;
 }
@@ -52,11 +57,11 @@ body {
 }
 
 .btn-gourmet {
-  background-color: #bda96f;
+  background-color: var(--gourmet-beige);
   border: none;
   color: #212529;
 }
 
 .btn-gourmet:hover {
-  background-color: #a58f4d;
+  background-color: var(--gourmet-btn-hover);
 }
