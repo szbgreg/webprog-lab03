@@ -50,3 +50,13 @@ body {
   object-fit: cover;
   object-position: center;
 }
+
+.btn-gourmet {
+  background-color: #bda96f;
+  border: none;
+  color: #212529;
+}
+
+.btn-gourmet:hover {
+  background-color: #a58f4d;
+}
