@@ -65,3 +65,32 @@ body {
 .btn-gourmet:hover {
   background-color: var(--gourmet-btn-hover);
 }
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  color: #212529;
+  background-color: var(--gourmet-btn-hover);
+}
+
+.navbar-nav {
+  padding: 0.6rem 0;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.3rem;
+  padding: 0.6rem 1.5rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--gourmet-beige);
+  background-color: #f0f0f0;
+}
+
+.navbar-nav .nav-link.active {
+  color: #212529;
+  font-weight: 500;
+  border-bottom: 2px solid var(--gourmet-beige);
+}
