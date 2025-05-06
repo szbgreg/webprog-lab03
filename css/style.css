@@ -94,3 +94,32 @@ body {
   font-weight: 500;
   border-bottom: 2px solid var(--gourmet-beige);
 }
+
+.daily-offers__title {
+  color: var(--gourmet-beige);
+  font-size: 3rem;
+  margin: 3rem 0;
+}
+
+.daily-offers__divider {
+  margin: 5rem 0;
+}
+
+.offer__heading {
+  color: var(--gourmet-beige);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+@media (min-width: 40em) {
+  .offer__heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .offer__heading {
+    margin-top: 7rem;
+  }
+}
