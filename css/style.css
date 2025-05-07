@@ -183,3 +183,24 @@ body {
   float: right;
   font-weight: 400;
 }
+
+.reservation__info {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #212529;
+}
+
+.reservation__info ul {
+  list-style-type: none;
+}
+
+.reservation__pictures {
+  margin-top: 2rem;
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
