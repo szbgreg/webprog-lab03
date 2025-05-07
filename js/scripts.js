@@ -1,32 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("./data/menu.json")
-    .then((res) => res.json())
-    .then((data) => {
-      const tbody = document.getElementById("menuBody");
-      let currentCat = null;
+  
+  const tbody = document.getElementById("menuBody");
+  if (tbody) {
+    fetch("./data/menu.json")
+      .then((res) => res.json())
+      .then((data) => {
+        let currentCat = null;
 
-      data.sort((a, b) => {
-        if (a.category > b.category) {
-          return 1;
-        }
-        if (a.category < b.category) {
-          return -1;
-        }
-        return 0;
-      });
+        data.sort((a, b) => {
+          if (a.category > b.category) {
+            return 1;
+          }
+          if (a.category < b.category) {
+            return -1;
+          }
+          return 0;
+        });
 
-      data.forEach((item) => {
-        if (item.category !== currentCat) {
-          const catRow = document.createElement("tr");
-          currentCat = item.category;
+        data.forEach((item) => {
+          if (item.category !== currentCat) {
+            const catRow = document.createElement("tr");
+            currentCat = item.category;
 
-          catRow.classList.add("table-secondary");
-          catRow.innerHTML = `<td colspan="7" class="fw-bold">${currentCat}</td>`;
-          tbody.append(catRow);
-        }
+            catRow.classList.add("table-secondary");
+            catRow.innerHTML = `<td colspan="7" class="fw-bold">${currentCat}</td>`;
+            tbody.append(catRow);
+          }
 
-        const row = document.createElement("tr");
-        row.innerHTML = `
+          const row = document.createElement("tr");
+          row.innerHTML = `
             <td></td> 
             <td><img class="img-fluid table__img" src="images/${
               item.image
@@ -37,37 +39,38 @@ document.addEventListener("DOMContentLoaded", () => {
             <td>${item.calories}</td>
             <td class="table__price"><b>${item.price.toLocaleString()} Ft</b></td>
           `;
-        tbody.append(row);
-      });
-    })
-    .catch((err) => console.error("Hiba a menü betöltésekor:", err));
-});
+          tbody.append(row);
+        });
+      })
+      .catch((err) => console.error("Hiba a menü betöltésekor:", err));
+  }
 
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("./data/menu.json")
-    .then((res) => res.json())
-    .then((data) => {
-      const galleryBody = document.getElementById("galleryBody");
+  const galleryBody = document.getElementById("galleryBody");
 
-      data.forEach((item) => {
-        const div = document.createElement("div");
-        div.classList.add("col-md-4", "col-sm-6");
+  if (galleryBody) {
+    fetch("./data/menu.json")
+      .then((res) => res.json())
+      .then((data) => {
+        data.forEach((item) => {
+          const div = document.createElement("div");
+          div.classList.add("col-md-4", "col-sm-6");
 
-        const a = document.createElement("a");
-        a.href = `images/${item.image}`;
-        a.classList.add("glightbox");
+          const a = document.createElement("a");
+          a.href = `images/${item.image}`;
+          a.classList.add("glightbox");
 
-        const img = document.createElement("img");
-        img.src = `images/${item.image}`;
-        img.alt = item.name;
-        img.classList.add("img-fluid", "gallery__img");
+          const img = document.createElement("img");
+          img.src = `images/${item.image}`;
+          img.alt = item.name;
+          img.classList.add("img-fluid", "gallery__img");
 
-        a.appendChild(img);
-        div.appendChild(a);
-        galleryBody.appendChild(div);
-      });
+          a.appendChild(img);
+          div.appendChild(a);
+          galleryBody.appendChild(div);
+        });
 
-      const lightbox = GLightbox({ selector: ".glightbox" });
-    })
-    .catch((err) => console.error("Hiba a galéria betöltésekor:", err));
+        const lightbox = GLightbox({ selector: ".glightbox" });
+      })
+      .catch((err) => console.error("Hiba a galéria betöltésekor:", err));
+  }
 });
