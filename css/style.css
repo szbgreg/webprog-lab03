@@ -138,12 +138,6 @@ body {
   }
 }
 
-.table {
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: #212529;
-}
-
 .table__img {
   width: 125px;
   height: 85px;
@@ -173,22 +167,10 @@ body {
   object-fit: cover;
 }
 
-.reservation {
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: #212529;
-}
-
 .error {
   color: #da3030;
   float: right;
   font-weight: 400;
-}
-
-.reservation__info {
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: #212529;
 }
 
 .reservation__info ul {
