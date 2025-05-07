@@ -104,7 +104,8 @@ body {
 
 .daily-offers__title,
 .menu__title,
-.gallery__title {
+.gallery__title,
+.reservation__title {
   color: var(--gourmet-beige);
   font-size: 3rem;
   margin: 1.2rem 0 3rem 0;
@@ -169,4 +170,16 @@ body {
   width: 450px;
   height: 300px;
   object-fit: cover;
+}
+
+.reservation {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #212529;
+}
+
+.error {
+  color: #da3030;
+  float: right;
+  font-weight: 400;
 }

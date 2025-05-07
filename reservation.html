@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gourmet Étterem - Galéria</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navMenu"
+        >
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Étlap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galéria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="reservation.html">Foglalás</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Rólunk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="banner"></section>
+
+    <section class="container reservation my-5">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h2 class="text-center mb-4 reservation__title">Asztalfoglalás</h2>
+          <form
+            id="reservationForm"
+            method="post"
+            onsubmit="handleSubmit(event)"
+          >
+            <div class="mb-3">
+              <label for="name" class="form-label">Név</label>
+              <label class="error" id="nameValidationError"></label>
+              <input type="text" class="form-control" id="name" name="name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email cím</label>
+              <label class="error" id="emailValidationError"></label>
+              <input type="text" class="form-control" id="email" name="email" />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Telefonszám</label>
+              <label class="error" id="phoneValidationError"></label>
+              <input type="tel" class="form-control" id="phone" name="phone" />
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="date" class="form-label">Dátum</label>
+                <label class="error" id="dateValidationError"></label>
+                <input type="date" class="form-control" id="date" name="date" />
+              </div>
+              <div class="col-md-6">
+                <label for="time" class="form-label">Időpont</label>
+                <label class="error" id="timeValidationError"></label>
+                <input type="time" class="form-control" id="time" name="time" />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="guests" class="form-label">Létszám</label>
+              <label class="error" id="guestsValidationError"></label>
+              <select class="form-select" id="guests" name="guests">
+                <option value="">Kérem, válasszon...</option>
+                <option value="1">1 fő</option>
+                <option value="2">2 fő</option>
+                <option value="3">3 fő</option>
+                <option value="4">4 fő</option>
+                <option value="5">5 fő</option>
+                <option value="6">6 fő</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Megjegyzés</label>
+              <label class="error" id="messageValidationError"></label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-lg btn-gourmet">
+                Foglalás küldése
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <small>&copy; 2025 Gourmet Étterem. Minden jog fenntartva.</small>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
