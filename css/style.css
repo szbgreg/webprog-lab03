@@ -105,7 +105,8 @@ body {
 .daily-offers__title,
 .menu__title,
 .gallery__title,
-.reservation__title {
+.reservation__title,
+.about__title {
   color: var(--gourmet-beige);
   font-size: 3rem;
   margin: 1.2rem 0 3rem 0;
@@ -203,4 +204,27 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.member__img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 1rem;
+}
+
+.gourmet-text {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #212529;
+}
+
+.gourmet-text--fs-sm {
+  font-size: 1rem;
+}
+
+.contact ul {
+  list-style-type: none;
+  padding: 0;
 }

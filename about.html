@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gourmet Étterem - Galéria</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navMenu"
+        >
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Étlap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galéria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservation.html">Foglalás</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">Rólunk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="banner"></section>
+
+    <!-- RÓLUNK SZEKCIÓ -->
+    <section class="container py-5 about" style="margin-top: 80px">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img
+            src="images/banner.jpg"
+            alt="Étterem belső tér"
+            class="img-fluid rounded"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h2 class="mb-3 about__title">Rólunk</h2>
+          <p class="lead">
+            A <strong>Gourmet Étterem</strong> 2018 óta ötvözi a hagyományos
+            magyar ízeket a nemzetközi gasztronómia legjavával. Belvárosi
+            hangulatunkban minden fogás egy kis utazás, ahol a minőség és az
+            ízharmónia kéz a kézben jár.
+          </p>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <i class="bi bi-check2-circle text-primary"></i> Friss, helyi
+              alapanyagok
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2-circle text-primary"></i> Kreatív,
+              szezonális menü
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check2-circle text-primary"></i> Barátságos, profi
+              kiszolgálás
+            </li>
+          </ul>
+          <a href="reservation.html" class="btn btn-gourmet mt-3"
+            >Asztalfoglalás</a
+          >
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <section class="row align-items-center mb-5 team">
+        <div
+          class="col-lg-6 d-flex flex-column align-items-center mb-4 mb-lg-0"
+        >
+          <img
+            src="images/chef.jpg"
+            alt="Kovács Gábor"
+            class="img-fluid rounded-circle mb-3"
+            width="200"
+            height="200"
+          />
+          <h3 class="mb-2">Kovács Gábor</h3>
+          <p class="text-center gourmet-text">
+            Séfünk, Kovács Gábor, több mint 15 év szakmai tapasztalattal
+            rendelkezik. Szenvedélye a helyi alapanyagok kreatív feldolgozása és
+            az ízharmónia tökéletesítése.
+          </p>
+        </div>
+
+        <div
+          class="col-lg-6 d-flex flex-wrap justify-content-around team__members"
+        >
+          <div class="text-center mb-4">
+            <img
+              src="images/szekely.jpg"
+              alt="Székely Anna"
+              class="img-fluid rounded-circle member__img"
+            />
+            <h5>Székely Anna</h5>
+            <p class="gourmet-text gourmet-text--fs-sm">
+              Sous-chef, specialista a desszertek terén.
+            </p>
+          </div>
+
+          <div class="text-center mb-4">
+            <img
+              src="images/molnar.jpg"
+              alt="Molnár Péter"
+              class="img-fluid rounded-circle member__img"
+            />
+            <h5>Molnár Péter</h5>
+            <p class="gourmet-text gourmet-text--fs-sm">
+              Vezető felszolgáló, az élmény garantálója.
+            </p>
+          </div>
+
+          <div class="text-center mb-4">
+            <img
+              src="images/nagy.jpg"
+              alt="Nagy Eszter"
+              class="img-fluid rounded-circle member__img"
+            />
+            <h5>Nagy Eszter</h5>
+            <p class="gourmet-text gourmet-text--fs-sm">
+              Étteremvezető, a vendégelégedettség záloga.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <hr class="my-1" />
+
+    <section class="container py-5 contact">
+      <div class="row text-center gourmet-text">
+        <div class="col-md-6">
+          <h4>Nyitvatartás</h4>
+          <ul>
+            <li>Hétfő–Péntek: 12:00–22:00</li>
+            <li>Szombat: 11:00–23:00</li>
+            <li>Vasárnap: 11:00–21:00</li>
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <h4>Elérhetőségek</h4>
+          <ul>
+            <li>Telefon: +36 30 123 4567</li>
+            <li>Email: info-gourment@example.com</li>
+            <li>Cím: 1052 Budapest, Fő utca 1.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <small>&copy; 2025 Gourmet Étterem. Minden jog fenntartva.</small>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
